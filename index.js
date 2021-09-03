@@ -21,14 +21,11 @@ function verify(){
     bin.value.split('').map((char) => {
         if(char !== '0' && char !== '1'){
             document.getElementById('alert').style.display = 'block';
-            return
+            return   
         }
-        conversion()
     })
-
-
+    conversion()
 }
-
 function conversion(){
     result = parseInt(bin.value, 2);
     print()
