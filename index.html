@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binário para Decimal</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Binário Para Decimal</h1>
+            <p>Base 10</p>
+            <p>
+                Binário: 
+                <input type="text" id="bin" class="input-text" placeholder="Somente 0 e 1"  oninput="this.value = this.value.replace(/[^0-9.]/g,'').replace(/(\..*?)\..*/g, '$1');">
+
+                <div class="alert" id="alert" style="display: none;">Você esta usando outro(s) números além de 0 e 1 </div>
+            </p>
+            <p>
+                Decimal: 
+                <!-- readonly deixa o input não editavel -->
+                <input type="text" id="dec" class="input-text" readonly>
+            </p>
+            <input type="button" class="input-button" onclick="getData()" value="converter">
+        </div>
+    </main>
+</body>
+</html>
